@@ -118,3 +118,5 @@ ampy put boot.py boot.py
 ampy rm foo.py
 ampy run test.py
 ```
+
+Access Wiki [here] (https://github.com/jordy33/esp8266-Micropython/wiki) for examples
