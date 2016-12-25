@@ -19,7 +19,7 @@ workon esp8266
 pip install esptool
 ```
 Wire ESP8266 to enable Flash mode
-![](https://github.com/jordy33/esp8266-bmp085/blob/master/x.images/ESPflashingmode.jpg?raw=true)
+![](https://github.com/jordy33/esp8266-Micropython/blob/master/x.images/ESPflashingmode.jpg?raw=true)
 
 ### Flash Micropython on the ESP8266
 
@@ -32,7 +32,7 @@ flash2mem.sh
 ```
 
 ### Put ESP8266 in normal operation mode
-![](https://github.com/jordy33/esp8266-bmp085/blob/master/x.images/ESPoperationmode.png?raw=true)
+![](https://github.com/jordy33/esp8266-Micropython/blob/master/x.images/ESPoperationmode.png?raw=true)
 ```objc
 It is better to use pull up resistor with GPIO0 in ESP8266 ESP-01
 In ESP8266, GPIO0 has two two functionalities.
