@@ -18,7 +18,6 @@ for item in scan:
 url='https://maps.googleapis.com/maps/api/browserlocation/json?browser=firefox&sensor=true'
 for item in list:    
     url=url+"&wifi=mac:{}|ssid:{}|ss:{}".format(item['bssid'],item['ssid'],item['rssi'])  
-#print(url)
 headers = {"Content-type": "application/x-www-form-urlencoded", "Accept": "text/plain"}
 data={}
 resp = urequests.get(url, data=data,headers=headers)
