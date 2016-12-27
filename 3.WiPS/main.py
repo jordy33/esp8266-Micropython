@@ -13,14 +13,13 @@ for item in scan:
     bssid="{}{}-{}{}-{}{}-{}{}-{}{}-{}{}".format(*macaddress)
     channel=str(item[2])
     rssi=str(item[3])
-    unknown=str(item[4])
     list.append(dict({'ssid':ssid,'bssid':bssid,'channel':channel,'rssi':rssi}))
 url='https://maps.googleapis.com/maps/api/browserlocation/json?browser=firefox&sensor=true'
 for item in list:    
     url=url+"&wifi=mac:{}|ssid:{}|ss:{}".format(item['bssid'],item['ssid'],item['rssi'])  
 headers = {"Content-type": "application/x-www-form-urlencoded", "Accept": "text/plain"}
 data={}
-resp = urequests.get(url, data=data,headers=headers)
-print(resp.json())
-resp.close()
+response = urequests.get(url, data=data,headers=headers)
+print(response.json())
+response.close()
 
