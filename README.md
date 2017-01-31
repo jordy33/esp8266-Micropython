@@ -55,6 +55,10 @@ Access the repl with
 ```objc
 screen /dev/cu.SLAB_USBtoUART 115200
 ```
+To Kill session:
+```objc
+CTRL-A   K 
+```
 If you are in ubuntu search your serial port with : 
 ```objc
 ls /dev
